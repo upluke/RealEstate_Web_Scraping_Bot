@@ -194,7 +194,7 @@
                             <OutArgument x:TypeArguments="x:Double">[Sqft]</OutArgument>
                           </Assign.To>
                           <Assign.Value>
-                            <InArgument x:TypeArguments="x:Double">[Convert.ToDouble(row("Sqft").ToString.Replace(" sqft", "").Replace(" sqft lot", "").Replace(",", "").Replace("--","0").Trim)]</InArgument>
+                            <InArgument x:TypeArguments="x:Double">[Convert.ToDouble(row("Sqft").ToString.Replace(" sqft","").Replace(",", "").Replace("--","0").Trim)]</InArgument>
                           </Assign.Value>
                         </Assign>
                         <Assign DisplayName="Assign Beds" sap:VirtualizedContainerService.HintSize="652,60" sap2010:WorkflowViewState.IdRef="Assign_5">
